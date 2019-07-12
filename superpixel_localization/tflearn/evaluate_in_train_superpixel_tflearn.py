@@ -1,11 +1,12 @@
 
 
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/tflearn_models')
 
-from tflearn_firenet import *
-from tflearn_inceptionv1onfire import *
-from inceptionv2_tflearn_a import *
-from inceptionv2_tflearn_b import *
-from inceptionv2_tflearn_c import *
+import tensorflow as tf
+from tflearn_inceptionv2onfire_a import *
+from tflearn_inceptionv2onfire_b import *
+from tflearn_inceptionv2onfire_c import *
 from inceptionv2_tflearn_a_4 import *
 from inceptionv2_tflearn_a_5 import *
 from inceptionv2_tflearn_a_6 import *
@@ -15,9 +16,10 @@ from inceptionv2_tflearn_b_6 import *
 from inceptionv2_tflearn_c_4 import *
 from inceptionv2_tflearn_c_5 import *
 from inceptionv2_tflearn_c_6 import *
-from tflearn_inceptionv2onfire_a import *
-from tflearn_inceptionv2onfire_b import *
-from tflearn_inceptionv2onfire_c import *
+from inceptionv2_tflearn_a import *
+from inceptionv2_tflearn_b import *
+from inceptionv2_tflearn_c import *
+from inceptionv3_tflearn import *
 from inceptionv3_a_tflearn import *
 from inceptionv3_b_tflearn import *
 from inceptionv3_c_tflearn import *
@@ -26,19 +28,29 @@ from inceptionv3_e_tflearn import *
 from inceptionv3_f_tflearn import *
 from inceptionv3_g_tflearn import *
 from inceptionv3_h_tflearn import *
+from inceptionv3_i_tflearn import *
+from inceptionv3_j_tflearn import *
+from inceptionv3_k_tflearn import *
+from inceptionv3_l_tflearn import *
 from inceptionv4_tflearn import *
-from inceptionv4_a_tflearn import *
 from inceptionv4_b_tflearn import *
 from inceptionv4_c_tflearn import *
-from inceptionv4_d_tflearn  import *
+from inceptionv4_d_tflearn import *
 from inceptionv4_e_tflearn import *
 from inceptionv4_f_tflearn import *
 from inceptionv4_g_tflearn import *
 from inceptionv4_h_tflearn import *
 from inceptionv4_i_tflearn import *
+from inceptionv4_j_tflearn import *
+from inceptionv4_k_tflearn import *
+from inceptionv4_l_tflearn import *
+from inceptionv4_m_tflearn import *
+
+
+
 import h5py
-import os
 import sys
+import os
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 

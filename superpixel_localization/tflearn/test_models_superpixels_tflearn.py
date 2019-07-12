@@ -1,8 +1,8 @@
 
 
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/tflearn_models')
 
-from tflearn_firenet import *
-from tflearn_inceptionv1onfire import *
 from inceptionv2_tflearn_a import *
 from inceptionv2_tflearn_b import *
 from inceptionv2_tflearn_c import *
@@ -45,7 +45,7 @@ from inceptionv4_k_tflearn import *
 from inceptionv4_l_tflearn import *
 from inceptionv4_m_tflearn import *
 
-from inceptionV1OnFire import construct_inceptionv1onfire
+
 import h5py
 import sys
 from sklearn.metrics import f1_score

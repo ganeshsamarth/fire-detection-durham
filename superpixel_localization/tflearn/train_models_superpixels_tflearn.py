@@ -2,57 +2,9 @@
 Tflearn train models 
 '''
 
-from tflearn_firenet import *
-from vgg13 import *
-import tensorflow as tf
-from tflearn_inceptionv1onfire import *
-from tflearn_inceptionv2onfire_a import *
-from tflearn_inceptionv2onfire_b import *
-from tflearn_inceptionv2onfire_c import *
-from inceptionv2_tflearn_a_4 import *
-from inceptionv2_tflearn_a_5 import *
-from inceptionv2_tflearn_a_6 import *
-from inceptionv2_tflearn_b_4 import *
-from inceptionv2_tflearn_b_5 import *
-from inceptionv2_tflearn_b_6 import *
-from inceptionv2_tflearn_c_4 import *
-from inceptionv2_tflearn_c_5 import *
-from inceptionv2_tflearn_c_6 import *
-from inceptionv2_tflearn_a import *
-from inceptionv2_tflearn_b import *
-from inceptionv2_tflearn_c import *
-from inceptionv3_tflearn import *
-from inceptionv3_a_tflearn import *
-from inceptionv3_b_tflearn import *
-from inceptionv3_c_tflearn import *
-from inceptionv3_d_tflearn import *
-from inceptionv3_e_tflearn import *
-from inceptionv3_f_tflearn import *
-from inceptionv3_g_tflearn import *
-from inceptionv3_h_tflearn import *
-from inceptionv3_i_tflearn import *
-from inceptionv3_j_tflearn import *
-from inceptionv3_k_tflearn import *
-from inceptionv3_l_tflearn import *
-from inceptionv4_tflearn import *
-from inceptionv4_b_tflearn import *
-from inceptionv4_c_tflearn import *
-from inceptionv4_d_tflearn import *
-from inceptionv4_e_tflearn import *
-from inceptionv4_f_tflearn import *
-from inceptionv4_g_tflearn import *
-from inceptionv4_h_tflearn import *
-from inceptionv4_i_tflearn import *
-from inceptionv4_j_tflearn import *
-from inceptionv4_k_tflearn import *
-from inceptionv4_l_tflearn import *
-from inceptionv4_m_tflearn import *
-
-
 from evaluate_in_train_superpixel_tflearn import *
-import h5py
-import sys
-import os
+
+
 
 model_name=globals()['construct_'+sys.argv[1]]
 
