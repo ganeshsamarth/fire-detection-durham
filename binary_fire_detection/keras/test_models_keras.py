@@ -3,7 +3,8 @@
 Testing keras models
 
 '''
-
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/keras_models')
 
 from resnet_keras import *
 import numpy as np

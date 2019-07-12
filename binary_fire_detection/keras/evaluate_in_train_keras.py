@@ -1,9 +1,12 @@
 
 
-
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/keras_models')
 from resnet_keras import *
 import numpy as np
 from efficientnet_keras import *
+from inception_resnet_v1_keras import *
+from inception_resnet_v2_keras import *
 from sklearn.metrics import f1_score
 from sklearn.metrics import precision_score
 import keras

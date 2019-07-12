@@ -2,6 +2,8 @@
 Training models in keras
 
 '''
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/keras_models')
 
 from resnet_keras import *
 from inception_resnet_v1_keras import *
@@ -11,7 +13,7 @@ from efficientnet_keras import *
 from keras.callbacks import ModelCheckpoint
 #from evaluate_in_train_keras import *
 import h5py
-import sys
+
 
 
 model_name=sys.argv[1]
