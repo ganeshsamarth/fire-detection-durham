@@ -1,8 +1,8 @@
 
 
+import sys
+sys.path.insert(0, '/home/pbu/fire-detection-durham/tflearn_models')
 
-from tflearn_firenet import *
-from tflearn_inceptionv1onfire import *
 from inceptionv2_tflearn_a import *
 from inceptionv2_tflearn_b import *
 from inceptionv2_tflearn_c import *

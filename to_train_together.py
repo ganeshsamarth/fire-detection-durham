@@ -17,7 +17,7 @@ import sys
 
 
 
-os.system('python train_models_superpixels_tflearn.py inceptionv4_j bn rmsprop d relu')
+os.system('python /home/pbu/fire-detection-durham/binary_fire_detection/tflearn/train_models_tflearn.py inceptionv3_j bn rmsprop d relu')
 
 
 
