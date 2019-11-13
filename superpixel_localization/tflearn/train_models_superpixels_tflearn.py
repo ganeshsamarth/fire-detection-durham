@@ -1,5 +1,5 @@
 '''
-Tflearn train models 
+Tflearn train models
 '''
 
 from evaluate_in_train_superpixel_tflearn import *
@@ -41,6 +41,8 @@ else:
 
 model = model_name(224, 224,normalization,optimizer,dropout,activation,training=True)
 print("Constructed ..."+sys.argv[1])
+# Initializing the weights with the binary weights
+model.load("/home/pbu/fire-detection-cnn/models_best/"+sys.argv[1]+'/'+sys.argv[1]+'_'+sys.argv[2]+'_'+sys.argv[3]+'_'+str(sys.argv[4])+'_'+sys.argv[5]+'.tflearn')
 
 
 h5f1 = h5py.File("{}data_superpixel_test_centre.h5".format(output_directory), 'r')
@@ -72,10 +74,10 @@ print(total_parameters)
 
 
 for i in range(0,150):
-	
+
 	model.fit(train_X,train_Y,n_epoch=1,validation_set=(test_X,test_Y),batch_size=64,show_metric=True,shuffle=True)
 	evaluate_in_train_superpixel(sys.argv[1],model,i)
-	
+
 
 
 
@@ -83,5 +85,3 @@ for i in range(0,150):
 with open('parameters_count.txt','a') as myfile2:
 	myfile2.write('models_new_weights_superpixel/'+'centre_nonaugmented_with_red/'+sys.argv[1]+'/'+sys.argv[1]+'_'+sys.argv[2]+'_'+sys.argv[3]+'_'+str(sys.argv[4])+sys.argv[5]+'_sp'+'.tflearn'+'\n')
 	myfile2.write(str(total_parameters)+'\n')
-
-
